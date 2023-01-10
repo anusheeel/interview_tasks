@@ -24,6 +24,22 @@ def run():
     pp.create_line(
         net, from_bus=b2, to_bus=b3, length_km=0.1, name="Line", std_type="NAYY 4x50 SE"
     )
+    pp.create_line(
+        net,
+        from_bus=b4,
+        to_bus=b5,
+        length_km=0.1,
+        name="Line-2",
+        std_type="NAYY 4x50 SE",
+    )
+    pp.create_line(
+        net,
+        from_bus=b5,
+        to_bus=b6,
+        length_km=0.1,
+        name="Line-3",
+        std_type="NAYY 4x50 SE",
+    )
     tid2 = pp.create_transformer(
         net, hv_bus=b1, lv_bus=b4, std_type="0.4 MVA 20/0.4 kV", name="Trafo 2"
     )  # new transformer
